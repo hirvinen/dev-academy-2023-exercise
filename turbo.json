@@ -12,6 +12,11 @@
       "lint": {},
       "deploy": {
         "dependsOn": ["build", "test", "lint"]
+      },
+      "dev": {
+        "dependsOn": ["^build"],
+        "cache": false,
+        "persistent": true
       }
     }
   }

@@ -2,8 +2,12 @@
   "name": "common",
   "version": "1.0.0",
   "description": "Common data structures, types etc. for Helsinki City Bike apps",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "source": "src/index.ts",
+  "types": "src/index.ts",
   "scripts": {
+    "build": "npx tsc",
+    "dev": "npx tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

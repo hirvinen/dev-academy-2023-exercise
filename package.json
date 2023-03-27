@@ -4,6 +4,8 @@
   "description": "A web app for showing data about Helsinki City Bikes",
   "main": "index.js",
   "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --no-cache --continue",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +23,10 @@
     "packages/*"
   ],
   "devDependencies": {
-    "turbo": "^1.8.5"
+    "@types/node": "^18.15.10",
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.22",
+    "turbo": "^1.8.5",
+    "typescript": "^5.0.2"
   }
 }
