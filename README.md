@@ -5,6 +5,7 @@ This is my solution to the [Solita Dev Academy Finland 2023 pre-assignment](http
 - [Helsinki city bike app](#helsinki-city-bike-app)
   - [Scope](#scope)
   - [Technologies used](#technologies-used)
+  - [Repository structure](#repository-structure)
   - [Running the project](#running-the-project)
     - [Prerequisites](#prerequisites)
     - [Configuration](#configuration)
@@ -34,6 +35,21 @@ This is the current plan, and may be subject to change
 - [Husky](https://typicode.github.io/husky/) and [lint-staged](https://github.com/okonet/lint-staged) for pre-commit running of linters and tests
 - TODO: Testing frameworks to be decided
 - [Github actions](https://github.com/features/actions) for running tests
+
+## Repository structure
+
+This project is set up as a monorepo containing multiple packages:
+
+- apps
+  - api for the backend service
+  - frontend for the frontend application
+- packages
+  - data-import for importing the data
+  - common for common data structures, types etc.
+
+[Turborepo](https://turbo.build/) is used to run scripts across all packages concurrently, e.g. `turbo build lint` would run `build` and `lint` scripts in all packages.
+
+To install/update/remove dependencies for a single package, use the `--workspace` option in npm. E.g. to install React for the frontend, execute `npm install react --workspace=frontend` in the project root.
 
 ## Running the project
 
