@@ -7,6 +7,8 @@ This is my solution to the [Solita Dev Academy Finland 2023 pre-assignment](http
   - [Technologies used](#technologies-used)
   - [Running the project](#running-the-project)
     - [Prerequisites](#prerequisites)
+    - [Configuration](#configuration)
+    - [Running the database](#running-the-database)
   - [Features](#features)
     - [Data import](#data-import)
     - [Journey list view](#journey-list-view)
@@ -35,14 +37,20 @@ This is the current plan, and may be subject to change
 
 ## Running the project
 
-TODO
-
 ### Prerequisites
 
 TODO: Specify versions
 
-- [Docker](https://www.docker.com/)
+- [Docker](https://www.docker.com/), 23.0.1 used. Based on using compose file format 3, anything >=1.13.0 may work.
 - [Node.js](https://nodejs.org/)
+
+### Configuration
+
+Some configuration options MUST be set before running some things, such as setting a password for the database. Copy `.env.example` to `.env` and fill in the blanks.
+
+### Running the database
+
+In order to run the database, set the database password in `.env` and execute `docker-compose up` in project root.
 
 ## Features
 
