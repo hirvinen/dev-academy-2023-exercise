@@ -1,5 +1,5 @@
 {
-  "name": "dev-academy-2023-exercise",
+  "name": "frontend",
   "version": "1.0.0",
   "description": "A web app for showing data about Helsinki City Bikes",
   "main": "index.js",
@@ -16,8 +16,7 @@
     "url": "https://github.com/hirvinen/dev-academy-2023-exercise/issues"
   },
   "homepage": "https://github.com/hirvinen/dev-academy-2023-exercise#readme",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  "dependencies": {
+    "common": "*"
+  }
 }

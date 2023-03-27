@@ -1,7 +1,7 @@
 {
-  "name": "dev-academy-2023-exercise",
+  "name": "api",
   "version": "1.0.0",
-  "description": "A web app for showing data about Helsinki City Bikes",
+  "description": "API for serving data about Helsinki City Bikes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,8 +16,8 @@
     "url": "https://github.com/hirvinen/dev-academy-2023-exercise/issues"
   },
   "homepage": "https://github.com/hirvinen/dev-academy-2023-exercise#readme",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  "dependencies": {
+    "common": "*",
+    "data-import": "*"
+  }
 }

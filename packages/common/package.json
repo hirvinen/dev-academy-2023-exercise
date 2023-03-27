@@ -1,7 +1,7 @@
 {
-  "name": "dev-academy-2023-exercise",
+  "name": "common",
   "version": "1.0.0",
-  "description": "A web app for showing data about Helsinki City Bikes",
+  "description": "Common data structures, types etc. for Helsinki City Bike apps",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,9 +15,5 @@
   "bugs": {
     "url": "https://github.com/hirvinen/dev-academy-2023-exercise/issues"
   },
-  "homepage": "https://github.com/hirvinen/dev-academy-2023-exercise#readme",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  "homepage": "https://github.com/hirvinen/dev-academy-2023-exercise#readme"
 }
