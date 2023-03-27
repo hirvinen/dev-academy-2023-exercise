@@ -4,6 +4,8 @@
   "description": "A web app for showing data about Helsinki City Bikes",
   "main": "index.js",
   "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --no-cache --continue",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

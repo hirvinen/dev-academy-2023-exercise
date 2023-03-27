@@ -11,6 +11,7 @@ This is my solution to the [Solita Dev Academy Finland 2023 pre-assignment](http
     - [Configuration](#configuration)
     - [Running the database](#running-the-database)
     - [Building packages](#building-packages)
+    - [Running in development mode](#running-in-development-mode)
   - [Features](#features)
     - [Data import](#data-import)
     - [Journey list view](#journey-list-view)
@@ -71,7 +72,11 @@ In order to run the database, set the database password in `.env` and execute `d
 
 ### Building packages
 
-All packages can be built by executing `turbo build`.
+All packages can be built by executing `npm run build`.
+
+### Running in development mode
+
+All apps can be run in development mode with `npm run dev`.
 
 ## Features
 
