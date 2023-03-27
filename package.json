@@ -21,6 +21,8 @@
     "packages/*"
   ],
   "devDependencies": {
-    "turbo": "^1.8.5"
+    "@types/node": "^18.15.10",
+    "turbo": "^1.8.5",
+    "typescript": "^5.0.2"
   }
 }
