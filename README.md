@@ -10,6 +10,7 @@ This is my solution to the [Solita Dev Academy Finland 2023 pre-assignment](http
     - [Prerequisites](#prerequisites)
     - [Configuration](#configuration)
     - [Running the database](#running-the-database)
+    - [Building packages](#building-packages)
   - [Features](#features)
     - [Data import](#data-import)
     - [Journey list view](#journey-list-view)
@@ -67,6 +68,10 @@ Some configuration options MUST be set before running some things, such as setti
 ### Running the database
 
 In order to run the database, set the database password in `.env` and execute `docker-compose up` in project root.
+
+### Building packages
+
+All packages can be built by executing `turbo build`.
 
 ## Features
 
