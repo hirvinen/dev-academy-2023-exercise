@@ -12,6 +12,7 @@ This is my solution to the [Solita Dev Academy Finland 2023 pre-assignment](http
     - [Running the database](#running-the-database)
     - [Building packages](#building-packages)
     - [Running in development mode](#running-in-development-mode)
+    - [API server](#api-server)
   - [Features](#features)
     - [Data import](#data-import)
     - [Journey list view](#journey-list-view)
@@ -77,6 +78,10 @@ All packages can be built by executing `npm run build`.
 ### Running in development mode
 
 All apps can be run in development mode with `npm run dev`.
+
+### API server
+
+API server will be listening on <http://localhost:3000> by default. Set API_PORT in .env to change that.
 
 ## Features
 
