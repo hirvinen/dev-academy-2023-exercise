@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start -H localhost -p 4000",
     "cypress": "cypress open",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run --e2e"
   },
   "repository": {
     "type": "git",
