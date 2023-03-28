@@ -14,6 +14,7 @@ This is my solution to the [Solita Dev Academy Finland 2023 pre-assignment](http
     - [Building packages](#building-packages)
     - [Running in development mode](#running-in-development-mode)
     - [API server](#api-server)
+    - [Frontend](#frontend)
   - [Features](#features)
     - [Data import](#data-import)
     - [Journey list view](#journey-list-view)
@@ -87,6 +88,10 @@ All apps can be run in development mode with `npm run dev` in the project root.
 ### API server
 
 API server will be listening on <http://localhost:3000> by default. Set API_PORT in .env to change that.
+
+### Frontend
+
+The frontend server will be listening on <http://localhost:4000> by default. Change fontend `package.json` to change that. TODO: Move to .env.
 
 ## Features
 
