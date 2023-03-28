@@ -6,6 +6,7 @@ This is my solution to the [Solita Dev Academy Finland 2023 pre-assignment](http
   - [Scope](#scope)
   - [Technologies used](#technologies-used)
   - [Repository structure](#repository-structure)
+    - [Running scripts for individual packages](#running-scripts-for-individual-packages)
   - [Running the project](#running-the-project)
     - [Prerequisites](#prerequisites)
     - [Configuration](#configuration)
@@ -54,6 +55,10 @@ This project is set up as a monorepo containing multiple packages:
 
 To install/update/remove dependencies for a single package, use the `--workspace` option in npm. E.g. to install React for the frontend, execute `npm install react --workspace=frontend` in the project root.
 
+### Running scripts for individual packages
+
+In order to run a script for an individual package, use `turbo [run] <script> --filter=<package>` in the project root or `npm run <script>` in the package directory.
+
 ## Running the project
 
 ### Prerequisites
@@ -77,7 +82,7 @@ All packages can be built by executing `npm run build`.
 
 ### Running in development mode
 
-All apps can be run in development mode with `npm run dev`.
+All apps can be run in development mode with `npm run dev` in the project root.
 
 ### API server
 
