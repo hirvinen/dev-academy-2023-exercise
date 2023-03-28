@@ -94,7 +94,7 @@ API server will be listening on <http://localhost:3000> by default. Set API_PORT
 
 ### Frontend
 
-The frontend server will be listening on <http://localhost:4000> by default. Change fontend `package.json` to change that. TODO: Move to .env.
+The frontend server will be listening on <http://localhost:4000> by default. Set `FRONTEND_PORT` and `FRONTEND_HOST` in `.env` to change that.
 
 ## Running tests
 
