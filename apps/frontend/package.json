@@ -7,6 +7,7 @@
     "dev": "next dev -H localhost -p 4000",
     "build": "next build",
     "start": "next start -H localhost -p 4000",
+    "cypress": "cypress open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

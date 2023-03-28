@@ -15,6 +15,9 @@ This is my solution to the [Solita Dev Academy Finland 2023 pre-assignment](http
     - [Running in development mode](#running-in-development-mode)
     - [API server](#api-server)
     - [Frontend](#frontend)
+  - [Running tests](#running-tests)
+    - [Frontend end-to-end testing](#frontend-end-to-end-testing)
+      - [Cypress dependencies on Linux / WSL (2)](#cypress-dependencies-on-linux--wsl-2)
   - [Features](#features)
     - [Data import](#data-import)
     - [Journey list view](#journey-list-view)
@@ -92,6 +95,23 @@ API server will be listening on <http://localhost:3000> by default. Set API_PORT
 ### Frontend
 
 The frontend server will be listening on <http://localhost:4000> by default. Change fontend `package.json` to change that. TODO: Move to .env.
+
+## Running tests
+
+TODO
+
+### Frontend end-to-end testing
+
+[Cypress](https://www.cypress.io/) will be used for frontend end-to-end testing. Cypress GUI can be used to run and manage them. To launch it, run `npm run cypress` in the frontend directory.
+
+#### Cypress dependencies on Linux / WSL (2)
+
+At least running the Cypress GUI [may require installing additional dependencies on Linux.](https://docs.cypress.io/guides/getting-started/installing-cypress#Linux-Prerequisites). This also applies to WSL / WSL2.
+
+- On Ubuntu/Debian: `sudo apt install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb`.
+- On CentOS and probably its relatives, `sudo yum install -y xorg-x11-server-Xvfb gtk2-devel gtk3-devel libnotify-devel GConf2 nss libXScrnSaver alsa-lib`.
+
+If you are using WSL(2), you will also need an X server. I use [VcXsrv](https://sourceforge.net/projects/vcxsrv/) 1.20.14.0. Except for the part about disabling access control, [this tutorial](https://aalonso.dev/blog/how-to-use-gui-apps-in-wsl2-forwarding-x-server-cdj) has good instructions for installing it. Instead of disabling access controls, follow the steps in [this StackOverflow answer](https://stackoverflow.com/a/66768217) to set up a `.XAuthority` file and a shortcut to VcXsrv, which uses that file.
 
 ## Features
 
