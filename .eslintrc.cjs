@@ -4,6 +4,8 @@ module.exports = {
   ],
   plugins: [
     '@typescript-eslint',
+    'react',
+    'import',
   ],
   parser: '@typescript-eslint/parser',
   overrides: [
