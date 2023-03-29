@@ -7,6 +7,7 @@ This is my solution to the [Solita Dev Academy Finland 2023 pre-assignment](http
   - [Technologies used](#technologies-used)
   - [Repository structure](#repository-structure)
     - [Running scripts for individual packages](#running-scripts-for-individual-packages)
+    - [Linting](#linting)
   - [Running the project](#running-the-project)
     - [Prerequisites](#prerequisites)
     - [Configuration](#configuration)
@@ -55,13 +56,17 @@ This project is set up as a monorepo containing multiple packages:
   - data-import for importing the data
   - common for common data structures, types etc.
 
-[Turborepo](https://turbo.build/) is used to run scripts across all packages concurrently, e.g. `turbo build lint` would run `build` and `lint` scripts in all packages.
+[Turborepo](https://turbo.build/) is used to run scripts across all packages concurrently, e.g. `turbo build test` would run `build` and `test` scripts in all packages.
 
 To install/update/remove dependencies for a single package, use the `--workspace` option in npm. E.g. to install React for the frontend, execute `npm install react --workspace=frontend` in the project root.
 
 ### Running scripts for individual packages
 
 In order to run a script for an individual package, use `turbo [run] <script> --filter=<package>` in the project root or `npm run <script>` in the package directory.
+
+### Linting
+
+Eslint is not configured separately for individual packages, except for frontend, which requires some next-specific configuration. To lint everything, run `npm run lint` in project root.
 
 ## Running the project
 
