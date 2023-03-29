@@ -4,10 +4,11 @@
   "description": "A web app for showing data about Helsinki City Bikes",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev -H localhost -p 4000",
+    "dev": "node dev-server.js",
     "build": "next build",
-    "start": "next start -H localhost -p 4000",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node prod-server.js",
+    "cypress": "cypress open",
+    "test": "cypress run --e2e"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/hirvinen/dev-academy-2023-exercise#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
@@ -27,7 +29,7 @@
   },
   "devDependencies": {
     "@types/react": "18.0.9",
-    "@types/react-dom": "18.0.4"
-  }
+    "@types/react-dom": "18.0.4",
+    "cypress": "^12.8.1"
   }
 }
