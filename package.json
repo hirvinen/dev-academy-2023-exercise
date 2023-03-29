@@ -29,6 +29,7 @@
     "@typescript-eslint/parser": "^5.57.0",
     "concurrently": "^7.6.0",
     "eslint": "^8.37.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
     "nodemon": "^2.0.22",
     "turbo": "^1.8.5",
     "typescript": "^5.0.2"
