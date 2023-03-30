@@ -88,7 +88,7 @@ Some configuration options MUST be set before running some things, such as setti
 
 ### Running the database
 
-In order to run the database, set the database password in `.env` and execute `docker-compose up` in project root.
+In order to run the database alone, set the database password in `.env` and execute `docker-compose up` in project root.
 
 ### Building packages
 
@@ -96,7 +96,7 @@ All packages can be built by executing `npm run build`.
 
 ### Running in development mode
 
-All apps can be run in development mode with `npm run dev` in the project root.
+All apps can be run in development mode with `npm run dev` in the project root. This runs the database container and runs the apps.
 
 ### API server
 

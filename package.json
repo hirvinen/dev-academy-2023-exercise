@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --no-cache --continue",
+    "dev": "docker-compose up -d && turbo run dev --no-cache --continue",
     "lint": "eslint --fix . && prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
