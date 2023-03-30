@@ -8,6 +8,7 @@
     "dev": "docker-compose up -d && turbo run dev --no-cache --continue",
     "lint": "eslint --fix . && prettier --write .",
     "start": "docker-compose up -d && turbo run start",
+    "cypress": "cd apps/frontend && cypress run --e2e",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
