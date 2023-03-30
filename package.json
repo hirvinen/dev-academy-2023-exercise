@@ -40,5 +40,10 @@
     "prettier-plugin-multiline-arrays": "^1.1.3",
     "turbo": "^1.8.5",
     "typescript": "^5.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }

@@ -5,6 +5,7 @@ This is my solution to the [Solita Dev Academy Finland 2023 pre-assignment](http
 - [Helsinki city bike app](#helsinki-city-bike-app)
   - [Scope](#scope)
   - [Technologies used](#technologies-used)
+  - [Development](#development)
   - [Repository structure](#repository-structure)
     - [Running scripts for individual packages](#running-scripts-for-individual-packages)
     - [Linting](#linting)
@@ -44,6 +45,10 @@ This is the current plan, and may be subject to change
 - [Husky](https://typicode.github.io/husky/) and [lint-staged](https://github.com/okonet/lint-staged) for pre-commit running of linters and tests
 - TODO: Testing frameworks to be decided
 - [Github actions](https://github.com/features/actions) for running tests
+
+## Development
+
+Before starting development, install git hooks by running `npx husky install`.
 
 ## Repository structure
 
