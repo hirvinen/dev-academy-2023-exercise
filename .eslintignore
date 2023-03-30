@@ -1,0 +1,3 @@
+apps/*/dist/*
+packages/*/dist/*
+lint-staged.config.js
