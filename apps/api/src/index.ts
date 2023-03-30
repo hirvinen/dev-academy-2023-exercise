@@ -5,12 +5,13 @@ import dotenv from 'dotenv';
 dotenv.config({ path: process.cwd() + '/../../.env' });
 
 const app: Express = express();
-const port = process.env.API_PORT || 3000;
+const port: number = (process.env.API_PORT || 3000) as number;
+const host: string = process.env.API_HOST || 'localhost';
 
 app.get('/', (req: Request, res: Response) => {
   res.send('');
 });
 
-app.listen(port, () => {
-  console.log(`API running at http://localhost:${port}`);
+app.listen(port, host, () => {
+  console.log(`API running at http://${host}:${port}`);
 });
