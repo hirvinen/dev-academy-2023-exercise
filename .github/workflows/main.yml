@@ -20,6 +20,6 @@ jobs:
         with:
           build: npm run build
           start: npm start
-          command: npm cypress
+          command: npm run cypress
         env:
           POSTGRESS_PASSWORD: ${{ secrets.TESTING_POSTGRES_PASSWORD }}
