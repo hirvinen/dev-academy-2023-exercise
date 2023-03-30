@@ -117,11 +117,11 @@ TODO
 
 ### Frontend end-to-end testing
 
-Before running end-to-end tests, run everything in development mode. TODO: Update this when production mode run scripts are defined.
+Before running end-to-end tests, run everything in production mode.
 
 [Cypress](https://www.cypress.io/) will be used for frontend end-to-end testing. Cypress GUI can be used to run and manage them. To launch it, run `npm run cypress` in the frontend directory.
 
-In order to run them headless, run `npm run test` in the frontend directory. Videos of the tests are generated into `cypress/videos`.
+In order to run them headless, run `npm run cypress` in project root or `npm run test` in the frontend directory. Videos of the tests / screenshots of failures are generated into `apps/frontend/cypress/{videos,screenshots}`.
 
 #### Cypress dependencies on Linux / WSL (2)
 
