@@ -20,6 +20,6 @@ jobs:
         with:
           build: npm run build
           start: npm start
-          working-directory: apps/frontend
+          command: cd apps/frontend && cypress run --e2e
         env:
           POSTGRESS_PASSWORD: ${{ secrets.TESTING_POSTGRES_PASSWORD }}
