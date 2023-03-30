@@ -15,6 +15,7 @@ This is my solution to the [Solita Dev Academy Finland 2023 pre-assignment](http
     - [Running the database](#running-the-database)
     - [Building packages](#building-packages)
     - [Running in development mode](#running-in-development-mode)
+    - [Running in production mode](#running-in-production-mode)
     - [API server](#api-server)
     - [Frontend](#frontend)
   - [Running tests](#running-tests)
@@ -97,6 +98,10 @@ All packages can be built by executing `npm run build`.
 ### Running in development mode
 
 All apps can be run in development mode with `npm run dev` in the project root. This runs the database container and runs the apps.
+
+### Running in production mode
+
+All apps can be run in production mode with `npm run start` in the project root. This runs the database container, builds all packages and runs the apps in production mode.
 
 ### API server
 
