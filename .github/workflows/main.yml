@@ -21,5 +21,6 @@ jobs:
           build: npm run build
           start: npm start
           command: npm run cypress
+          wait-on: 'http://localhost:4000'
         env:
           POSTGRESS_PASSWORD: ${{ secrets.TESTING_POSTGRES_PASSWORD }}
