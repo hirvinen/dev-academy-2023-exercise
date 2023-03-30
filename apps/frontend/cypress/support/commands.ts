@@ -23,5 +23,5 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-const asModule = {}
-export default asModule
+const asModule = {};
+export default asModule;

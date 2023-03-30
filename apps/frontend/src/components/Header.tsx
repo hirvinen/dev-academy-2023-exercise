@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
 const Header: React.FunctionComponent = () => (
   <div className="navigation">
@@ -9,6 +9,6 @@ const Header: React.FunctionComponent = () => (
       <a>About</a>
     </Link>
   </div>
-)
+);
 
-export default Header
+export default Header;
