@@ -9,7 +9,7 @@
     "lint": "eslint --fix . && prettier --write .",
     "start": "docker-compose up -d && turbo run start",
     "cypress": "cd apps/frontend && cypress run --e2e",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "turbo run test"
   },
   "repository": {
     "type": "git",

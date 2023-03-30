@@ -113,7 +113,7 @@ The frontend server will be listening on <http://localhost:4000> by default. Set
 
 ## Running tests
 
-TODO
+In order to run tests(excluding end-to-end tests) for all packages, use `npm run test` in project root. As these tests don't exist yet, the individual package test scripts just print an error and exit with status 1. The tests are run by turbo in parallel, and turbo will exit on first error, which will prevent remaining tests from being run. In order to run all tests even when some have errors, use `turbo test --continue`. Caveat: when using the `--continue` flag, turbo should exit with the highest exit code it encounters, but it doesn't, so that flag should not be used in anything that relies on process exit code.
 
 ### Frontend end-to-end testing
 
