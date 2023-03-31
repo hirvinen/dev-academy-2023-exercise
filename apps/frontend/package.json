@@ -23,16 +23,19 @@
   },
   "homepage": "https://github.com/hirvinen/dev-academy-2023-exercise#readme",
   "dependencies": {
+    "common": "*",
     "dotenv": "^16.0.3",
     "next": "12.1.6",
     "react": "18.1.0",
-    "react-dom": "18.1.0",
-    "common": "*"
+    "react-dom": "18.1.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.4",
     "cypress": "^12.8.1",
-    "eslint-config-next": "13.2.4"
+    "eslint-config-next": "13.2.4",
+    "jest-environment-jsdom": "^29.5.0"
   }
 }
