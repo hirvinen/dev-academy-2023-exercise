@@ -6,7 +6,7 @@ describe('About page', () => {
   it('renders a heading', () => {
     render(<About />);
     const heading = screen.getByRole('heading', {
-      name: 'About Helsinki City Bikes'
+      name: 'About Helsinki City Bikes',
     });
     expect(heading).toBeInTheDocument();
   });
