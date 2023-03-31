@@ -44,7 +44,7 @@ This is the current plan, and may be subject to change
 - [Turborepo](https://turbo.build/) for managing multiple projects in a single repository
 - [Eslint](https://eslint.org/) and [Prettier](https://prettier.io/) for linting and formatting
 - [Husky](https://typicode.github.io/husky/) and [lint-staged](https://github.com/okonet/lint-staged) for pre-commit running of linters and tests
-- TODO: Testing frameworks to be decided
+- [Cypress](https://www.cypress.io/) for end-to-end testing and [Jest](https://jestjs.io) with [ts-jest](https://github.com/kulshekhar/ts-jest) for unit tests. TODO: List significant testing libraries.
 - [Github actions](https://github.com/features/actions) for running tests
 
 ## Development
@@ -113,7 +113,7 @@ The frontend server will be listening on <http://localhost:4000> by default. Set
 
 ## Running tests
 
-In order to run tests(excluding end-to-end tests) for all packages, use `npm run test` in project root. As these tests don't exist yet, the individual package test scripts just print an error and exit with status 1. The tests are run by turbo in parallel, and turbo will exit on first error, which will prevent remaining tests from being run. In order to run all tests even when some have errors, use `turbo test --continue`. Caveat: when using the `--continue` flag, turbo should exit with the highest exit code it encounters, but it doesn't, so that flag should not be used in anything that relies on process exit code.
+In order to run tests(excluding end-to-end tests) for all packages, use `npm run test` in project root. The tests are run by turbo in parallel, and turbo will exit on first error, which will prevent remaining tests from being run. In order to run all tests even when some have errors, use `turbo test --continue`. Caveat: when using the `--continue` flag, turbo should exit with the highest exit code it encounters, but it doesn't, so that flag should not be used in anything that relies on process exit code. Code coverage reports will be generated under directories `{apps,packages}/*/coverage`.
 
 ### Frontend end-to-end testing
 
