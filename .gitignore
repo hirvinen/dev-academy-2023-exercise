@@ -4,4 +4,7 @@ node_modules
 .turbo
 dist
 .next
+
+#Cypress test results
 videos
+screenshots

@@ -10,6 +10,11 @@
         "inputs": ["src/**/*.tsx", "src/**/*.ts", "test/**/*.ts", "test/**/*.tsx"]
       },
       "lint": {},
+      "start": {
+        "dependsOn": ["build"],
+        "cache": false,
+        "persistent": true
+      },
       "deploy": {
         "dependsOn": ["build", "test", "lint"]
       },

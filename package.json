@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --no-cache --continue",
+    "dev": "docker-compose up -d && turbo run dev --no-cache --continue",
     "lint": "eslint --fix . && prettier --write .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "docker-compose up -d && turbo run start",
+    "cypress": "cd apps/frontend && cypress run --e2e",
+    "test": "turbo run test"
   },
   "repository": {
     "type": "git",

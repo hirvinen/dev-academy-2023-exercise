@@ -15,6 +15,7 @@ This is my solution to the [Solita Dev Academy Finland 2023 pre-assignment](http
     - [Running the database](#running-the-database)
     - [Building packages](#building-packages)
     - [Running in development mode](#running-in-development-mode)
+    - [Running in production mode](#running-in-production-mode)
     - [API server](#api-server)
     - [Frontend](#frontend)
   - [Running tests](#running-tests)
@@ -88,7 +89,7 @@ Some configuration options MUST be set before running some things, such as setti
 
 ### Running the database
 
-In order to run the database, set the database password in `.env` and execute `docker-compose up` in project root.
+In order to run the database alone, set the database password in `.env` and execute `docker-compose up` in project root.
 
 ### Building packages
 
@@ -96,7 +97,11 @@ All packages can be built by executing `npm run build`.
 
 ### Running in development mode
 
-All apps can be run in development mode with `npm run dev` in the project root.
+All apps can be run in development mode with `npm run dev` in the project root. This runs the database container and runs the apps.
+
+### Running in production mode
+
+All apps can be run in production mode with `npm run start` in the project root. This runs the database container, builds all packages and runs the apps in production mode.
 
 ### API server
 
@@ -108,15 +113,15 @@ The frontend server will be listening on <http://localhost:4000> by default. Set
 
 ## Running tests
 
-TODO
+In order to run tests(excluding end-to-end tests) for all packages, use `npm run test` in project root. As these tests don't exist yet, the individual package test scripts just print an error and exit with status 1. The tests are run by turbo in parallel, and turbo will exit on first error, which will prevent remaining tests from being run. In order to run all tests even when some have errors, use `turbo test --continue`. Caveat: when using the `--continue` flag, turbo should exit with the highest exit code it encounters, but it doesn't, so that flag should not be used in anything that relies on process exit code.
 
 ### Frontend end-to-end testing
 
-Before running end-to-end tests, run everything in development mode. TODO: Update this when production mode run scripts are defined.
+Before running end-to-end tests, run everything in production mode.
 
 [Cypress](https://www.cypress.io/) will be used for frontend end-to-end testing. Cypress GUI can be used to run and manage them. To launch it, run `npm run cypress` in the frontend directory.
 
-In order to run them headless, run `npm run test` in the frontend directory. Videos of the tests are generated into `cypress/videos`.
+In order to run them headless, run `npm run cypress` in project root or `npm run test-e2e` in the frontend directory. Videos of the tests / screenshots of failures are generated into `apps/frontend/cypress/{videos,screenshots}`.
 
 #### Cypress dependencies on Linux / WSL (2)
 
