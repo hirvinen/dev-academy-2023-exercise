@@ -7,20 +7,16 @@ export default async (): Promise<Config.InitialOptions> => {
       '^.+\\.tsx?$': [
         'ts-jest',
         {
-          tsconfig: 'tsconfig.test.json',
+          tsconfig: 'tsconfig.json',
         },
       ],
     },
     // Automatically clear mock calls and instances between every test
     clearMocks: true,
 
-    // A list of paths to modules that run some code to configure or set up the testing framework before each test
-    setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
-
     moduleNameMapper: {
       'src/(.*)': '<rootDir>/src/$1',
     },
-    testEnvironment: 'jsdom',
     collectCoverage: true,
     collectCoverageFrom: ['src/**/*.{ts,tsx}'],
   };
