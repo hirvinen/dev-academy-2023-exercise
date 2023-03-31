@@ -11,8 +11,8 @@ module.exports = {
   overrides: [
     {
       files: [
-        "**/*.ts",
-        "**/*.tsx"
+        '**/*.ts',
+        '**/*.tsx',
       ],
       extends: [
         'eslint:recommended',
@@ -29,7 +29,7 @@ module.exports = {
         ],
         tsconfigRootDir: __dirname,
       },
-    }
+    },
   ],
   root: true,
 };
