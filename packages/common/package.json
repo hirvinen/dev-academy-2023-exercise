@@ -8,7 +8,7 @@
   "scripts": {
     "build": "npx tsc",
     "dev": "npx tsc -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",

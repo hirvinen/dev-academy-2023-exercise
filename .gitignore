@@ -8,3 +8,6 @@ dist
 #Cypress test results
 videos
 screenshots
+
+# Jest coverage reports
+coverage
