@@ -1,3 +1,5 @@
 apps/*/dist/*
 packages/*/dist/*
 lint-staged.config.js
+apps/*/coverage/*
+packages/*/coverage/*
